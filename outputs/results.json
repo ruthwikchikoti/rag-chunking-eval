@@ -1,0 +1,967 @@
+{
+  "corpus": {
+    "title": "How to Do Great Work \u2014 Paul Graham",
+    "chars": 66927,
+    "words": 11946,
+    "paragraphs": 67
+  },
+  "config": {
+    "embed_backend": "st",
+    "embed_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "llm_model": "llama3.2:3b",
+    "top_k": 3
+  },
+  "strategies": {
+    "fixed": {
+      "chunk_count": 55,
+      "avg_words": 217.2,
+      "std_words": 20.6,
+      "avg_chars": 1214.7,
+      "word_sizes": [
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        220,
+        66
+      ],
+      "mean_precision_at_3": 0.8,
+      "mean_anchor_precision_at_3": 0.533,
+      "mean_faithfulness": 0.758,
+      "mean_answer_relevance": 0.82,
+      "per_query": [
+        {
+          "query_id": "Q1",
+          "qtype": "factual",
+          "question": "According to the essay, what are the three things you need to do great work?",
+          "answer": "According to the context passage [1], the first step is to decide what to work on, and it needs to have three qualities: \n\n1. Something you have a natural aptitude for\n2. Something you have a deep interest in\n3. (Although not explicitly stated as necessary) something that offers scope to do great work",
+          "precision_at_3": 0.6666666666666666,
+          "anchor_precision_at_3": 0.3333333333333333,
+          "relevance_flags": [
+            true,
+            true,
+            false
+          ],
+          "anchor_hits": [
+            true,
+            false,
+            false
+          ],
+          "faithfulness": 0.6666666666666666,
+          "faithfulness_detail": {
+            "score": 0.6666666666666666,
+            "supported": 2,
+            "total": 3,
+            "reason": "Claim 1 and 2 are directly supported by the context, while claim 3 is implied but not explicitly stated as necessary."
+          },
+          "answer_relevance": 0.7,
+          "retrieved": [
+            {
+              "chunk_idx": 0,
+              "score": 0.43516987562179565,
+              "n_words": 220,
+              "text": "How to Do Great Work July 2023 If you collected lists of techniques for doing great work in a lot of different fields, what would the intersection look like? I decided to find out by making it. Partly my goal was to create a guide that could be used by someone working in any field. But I was also curious about the shape of the intersection. And one thing this exercise shows is that it does have a definite shape; it's not just a point labelled \"work hard.\" The following recipe assumes you're very ambitious. The first step is to decide what to work on. The work you choose needs to have three qualities: it has to be something you have a natural aptitude for, that you have a deep interest in, and that offers scope to do great work. In practice you don't have to worry much about the third criterion. Ambitious people are if anything already too conservative about it. So all you need to do is find something you have an aptitude for and great interest in. [ 1 ] That sounds straightforward, but it's often quite difficult. When you're young you don't know what you're good at or what different kinds of work are like. Some kinds of work you end up doing may not even"
+            },
+            {
+              "chunk_idx": 3,
+              "score": 0.35559558868408203,
+              "n_words": 220,
+              "text": "a bet as you'll find. [ 3 ] Four steps: choose a field, learn enough to get to the frontier, notice gaps, explore promising ones. This is how practically everyone who's done great work has done it, from painters to physicists. Steps two and four will require hard work. It may not be possible to prove that you have to work hard to do great things, but the empirical evidence is on the scale of the evidence for mortality. That's why it's essential to work on something you're deeply interested in. Interest will drive you to work harder than mere diligence ever could. The three most powerful motives are curiosity, delight, and the desire to do something impressive. Sometimes they converge, and that combination is the most powerful of all. The big prize is to discover a new fractal bud. You notice a crack in the surface of knowledge, pry it open, and there's a whole world inside. Let's talk a little more about the complicated business of figuring out what to work on. The main reason it's hard is that you can't tell what most kinds of work are like except by doing them. Which means the four steps overlap: you may have to work at something for years before you know how much you like it or how"
+            },
+            {
+              "chunk_idx": 39,
+              "score": 0.34685519337654114,
+              "n_words": 220,
+              "text": "of work. You can take ideas from quite distant fields if you let them be metaphors. Negative examples can be as inspiring as positive ones. In fact you can sometimes learn more from things done badly than from things done well; sometimes it only becomes clear what's needed when it's missing. If a lot of the best people in your field are collected in one place, it's usually a good idea to visit for a while. It will increase your ambition, and also, by showing you that these people are human, increase your self-confidence. [ 26 ] If you're earnest you'll probably get a warmer welcome than you might expect. Most people who are very good at something are happy to talk about it with anyone who's genuinely interested. If they're really good at their work, then they probably have a hobbyist's interest in it, and hobbyists always want to talk about their hobbies. It may take some effort to find the people who are really good, though. Doing great work has such prestige that in some places, particularly universities, there's a polite fiction that everyone is engaged in it. And that is far from true. People within universities can't say so openly, but the quality of the work being done in different departments varies immensely. Some departments have people"
+            }
+          ]
+        },
+        {
+          "query_id": "Q2",
+          "qtype": "multi-hop",
+          "question": "How does curiosity connect to both choosing what to work on and actually producing original work?",
+          "answer": "Curiosity drives the process of choosing what to work on, as it will choose the field for you and get you to the frontier. It also fuels the production of original work by giving you new things to work on and making you notice gaps in existing knowledge, ultimately driving you to explore them.",
+          "precision_at_3": 1.0,
+          "anchor_precision_at_3": 1.0,
+          "relevance_flags": [
+            true,
+            true,
+            true
+          ],
+          "anchor_hits": [
+            true,
+            true,
+            true
+          ],
+          "faithfulness": 0.7142857142857143,
+          "faithfulness_detail": {
+            "score": 0.7142857142857143,
+            "supported": 5,
+            "total": 7,
+            "reason": "Claims 1, 2, 3, 4, and 6 are supported by the context."
+          },
+          "answer_relevance": 0.8,
+          "retrieved": [
+            {
+              "chunk_idx": 45,
+              "score": 0.5143837332725525,
+              "n_words": 220,
+              "text": "completely mistaken. If you do anything well enough, you'll make it prestigious. So the question to ask about a type of work is not how much prestige it has, but how well it could be done. Competition can be an effective motivator, but don't let it choose the problem for you; don't let yourself get drawn into chasing something just because others are. In fact, don't let competitors make you do anything much more specific than work harder. Curiosity is the best guide. Your curiosity never lies, and it knows more than you do about what's worth paying attention to. Notice how often that word has come up. If you asked an oracle the secret to doing great work and the oracle replied with a single word, my bet would be on \"curiosity.\" That doesn't translate directly to advice. It's not enough just to be curious, and you can't command curiosity anyway. But you can nurture it and let it drive you. Curiosity is the key to all four steps in doing great work: it will choose the field for you, get you to the frontier, cause you to notice the gaps in it, and drive you to explore them. The whole process is a kind of dance with curiosity. Believe it or not, I tried to make this essay"
+            },
+            {
+              "chunk_idx": 21,
+              "score": 0.4770260453224182,
+              "n_words": 220,
+              "text": "about the things you're interested in is a good way to generate new ideas. When you try to put ideas into words, a missing idea creates a sort of vacuum that draws it out of you. Indeed, there's a kind of thinking that can only be done by writing. Changing your context can help. If you visit a new place, you'll often find you have new ideas there. The journey itself often dislodges them. But you may not have to go far to get this benefit. Sometimes it's enough just to go for a walk. [ 16 ] It also helps to travel in topic space. You'll have more new ideas if you explore lots of different topics, partly because it gives the angle grinder more surface area to work on, and partly because analogies are an especially fruitful source of new ideas. Don't divide your attention evenly between many topics though, or you'll spread yourself too thin. You want to distribute it according to something more like a power law. [ 17 ] Be professionally curious about a few topics and idly curious about many more. Curiosity and originality are closely related. Curiosity feeds originality by giving it new things to work on. But the relationship is closer than that. Curiosity is itself a kind of originality; it's roughly"
+            },
+            {
+              "chunk_idx": 20,
+              "score": 0.46734392642974854,
+              "n_words": 220,
+              "text": "it does seem to some extent a separate skill. It's possible to have a great deal of ability in other respects \u2014 to have a great deal of what's often called technical ability \u2014 and yet not have much of this. I've never liked the term \"creative process.\" It seems misleading. Originality isn't a process, but a habit of mind. Original thinkers throw off new ideas about whatever they focus on, like an angle grinder throwing off sparks. They can't help it. If the thing they're focused on is something they don't understand very well, these new ideas might not be good. One of the most original thinkers I know decided to focus on dating after he got divorced. He knew roughly as much about dating as the average 15 year old, and the results were spectacularly colorful. But to see originality separated from expertise like that made its nature all the more clear. I don't know if it's possible to cultivate originality, but there are definitely ways to make the most of however much you have. For example, you're much more likely to have original ideas when you're working on something. Original ideas don't come from trying to have original ideas. They come from trying to build or understand something slightly too difficult. [ 15 ] Talking or writing"
+            }
+          ]
+        },
+        {
+          "query_id": "Q3",
+          "qtype": "negation",
+          "question": "What does Paul Graham say you should NOT let determine what you work on?",
+          "answer": "You shouldn't let status quo bias and laziness determine what you work on.",
+          "precision_at_3": 0.6666666666666666,
+          "anchor_precision_at_3": 0.3333333333333333,
+          "relevance_flags": [
+            true,
+            true,
+            false
+          ],
+          "anchor_hits": [
+            true,
+            false,
+            false
+          ],
+          "faithfulness": 0.75,
+          "faithfulness_detail": {
+            "score": 0.75,
+            "supported": 3,
+            "total": 4,
+            "reason": "Claim 1 is partially supported, Claim 2 and 3 are directly supported by the context."
+          },
+          "answer_relevance": 0.9,
+          "retrieved": [
+            {
+              "chunk_idx": 17,
+              "score": 0.346768856048584,
+              "n_words": 220,
+              "text": "lest you look like a fool. But that's advice for seeming smart. If you actually want to discover new things, it's better to take the risk of telling people your ideas. Some people are naturally earnest, and with others it takes a conscious effort. Either kind of earnestness will suffice. But I doubt it would be possible to do great work without being earnest. It's so hard to do even if you are. You don't have enough margin for error to accommodate the distortions introduced by being affected, intellectually dishonest, orthodox, fashionable, or cool. [ 14 ] Great work is consistent not only with who did it, but with itself. It's usually all of a piece. So if you face a decision in the middle of working on something, ask which choice is more consistent. You may have to throw things away and redo them. You won't necessarily have to, but you have to be willing to. And that can take some effort; when there's something you need to redo, status quo bias and laziness will combine to keep you in denial about it. To beat this ask: If I'd already made the change, would I want to revert to what I have now? Have the confidence to cut. Don't keep something that doesn't fit just because you're proud of"
+            },
+            {
+              "chunk_idx": 49,
+              "score": 0.32477784156799316,
+              "n_words": 220,
+              "text": "It's the cartesian product of all possible types of work, both known and yet to be discovered, and all possible future versions of you. There's no way you could search this whole space, so you have to rely on heuristics to generate promising paths through it and hope the best matches will be clustered. Which they will not always be; different types of work have been collected together as much by accidents of history as by the intrinsic similarities between them. [ 5 ] There are many reasons curious people are more likely to do great work, but one of the more subtle is that, by casting a wide net, they're more likely to find the right thing to work on in the first place. [ 6 ] It can also be dangerous to make things for an audience you feel is less sophisticated than you, if that causes you to talk down to them. You can make a lot of money doing that, if you do it in a sufficiently cynical way, but it's not the route to great work. Not that anyone using this m.o. would care. [ 7 ] This idea I learned from Hardy's A Mathematician's Apology , which I recommend to anyone ambitious to do great work, in any field. [ 8 ] Just as"
+            },
+            {
+              "chunk_idx": 15,
+              "score": 0.3229597806930542,
+              "n_words": 220,
+              "text": "problem, because it's self-solving if you work on sufficiently ambitious projects. If you succeed at an ambitious project, you're not a nobody; you're the person who did it. So just do the work and your identity will take care of itself. \"Avoid affectation\" is a useful rule so far as it goes, but how would you express this idea positively? How would you say what to be, instead of what not to be? The best answer is earnest. If you're earnest you avoid not just affectation but a whole set of similar vices. The core of being earnest is being intellectually honest. We're taught as children to be honest as an unselfish virtue \u2014 as a kind of sacrifice. But in fact it's a source of power too. To see new ideas, you need an exceptionally sharp eye for the truth. You're trying to see more truth than others have seen so far. And how can you have a sharp eye for the truth if you're intellectually dishonest? One way to avoid intellectual dishonesty is to maintain a slight positive pressure in the opposite direction. Be aggressively willing to admit that you're mistaken. Once you've admitted you were mistaken about something, you're free. Till then you have to carry it. [ 13 ] Another more subtle component of earnestness is"
+            }
+          ]
+        },
+        {
+          "query_id": "Q4",
+          "qtype": "comparison",
+          "question": "How does the essay contrast working hard with working on the right things?",
+          "answer": "The essay contrasts working hard with working on the right things by stating that while \"work hard\" is a common advice, it's not enough. Instead, it emphasizes the importance of choosing projects that have three qualities: natural aptitude, deep interest, and scope for great work. This suggests that working hard alone may not lead to great results, but working on the right things can.",
+          "precision_at_3": 0.6666666666666666,
+          "anchor_precision_at_3": 0.6666666666666666,
+          "relevance_flags": [
+            false,
+            true,
+            true
+          ],
+          "anchor_hits": [
+            true,
+            false,
+            true
+          ],
+          "faithfulness": 0.8,
+          "faithfulness_detail": {
+            "score": 0.8,
+            "supported": 4,
+            "total": 5,
+            "reason": "All claims except for the one about natural selection being discovered through planning are supported by the context."
+          },
+          "answer_relevance": 0.8,
+          "retrieved": [
+            {
+              "chunk_idx": 0,
+              "score": 0.40222784876823425,
+              "n_words": 220,
+              "text": "How to Do Great Work July 2023 If you collected lists of techniques for doing great work in a lot of different fields, what would the intersection look like? I decided to find out by making it. Partly my goal was to create a guide that could be used by someone working in any field. But I was also curious about the shape of the intersection. And one thing this exercise shows is that it does have a definite shape; it's not just a point labelled \"work hard.\" The following recipe assumes you're very ambitious. The first step is to decide what to work on. The work you choose needs to have three qualities: it has to be something you have a natural aptitude for, that you have a deep interest in, and that offers scope to do great work. In practice you don't have to worry much about the third criterion. Ambitious people are if anything already too conservative about it. So all you need to do is find something you have an aptitude for and great interest in. [ 1 ] That sounds straightforward, but it's often quite difficult. When you're young you don't know what you're good at or what different kinds of work are like. Some kinds of work you end up doing may not even"
+            },
+            {
+              "chunk_idx": 14,
+              "score": 0.3768497109413147,
+              "n_words": 220,
+              "text": "[ 11 ] Fortunately there's a kind of economy of scale here. Though it might seem like you'd be taking on a heavy burden by trying to be the best, in practice you often end up net ahead. It's exciting, and also strangely liberating. It simplifies things. In some ways it's easier to try to be the best than to try merely to be good. One way to aim high is to try to make something that people will care about in a hundred years. Not because their opinions matter more than your contemporaries', but because something that still seems good in a hundred years is more likely to be genuinely good. Don't try to work in a distinctive style. Just try to do the best job you can; you won't be able to help doing it in a distinctive way. Style is doing things in a distinctive way without trying to. Trying to is affectation. Affectation is in effect to pretend that someone other than you is doing the work. You adopt an impressive but fake persona, and while you're pleased with the impressiveness, the fakeness is what shows in the work. [ 12 ] The temptation to be someone else is greatest for the young. They often feel like nobodies. But you never need to worry about that"
+            },
+            {
+              "chunk_idx": 7,
+              "score": 0.3494020700454712,
+              "n_words": 220,
+              "text": "will lead you astray when you're trying to figure out what to work on. Pretentiousness, fashion, fear, money, politics, other people's wishes, eminent frauds. But if you stick to what you find genuinely interesting, you'll be proof against all of them. If you're interested, you're not astray. Following your interests may sound like a rather passive strategy, but in practice it usually means following them past all sorts of obstacles. You usually have to risk rejection and failure. So it does take a good deal of boldness. But while you need boldness, you don't usually need much planning. In most cases the recipe for doing great work is simply: work hard on excitingly ambitious projects, and something good will come of it. Instead of making a plan and then executing it, you just try to preserve certain invariants. The trouble with planning is that it only works for achievements you can describe in advance. You can win a gold medal or get rich by deciding to as a child and then tenaciously pursuing that goal, but you can't discover natural selection that way. I think for most people who want to do great work, the right strategy is not to plan too much. At each stage do whatever seems most interesting and gives you the best options for the future."
+            }
+          ]
+        },
+        {
+          "query_id": "Q5",
+          "qtype": "summarisation",
+          "question": "Summarise the essay's overall recipe for doing great work in two or three sentences.",
+          "answer": "To do great work, start by finding something you have a natural aptitude for and great interest in, then aim high by trying to make something that will still be good in a hundred years. To achieve this, try making successive versions of your work, starting with small experiments or side projects, and being prolific by trying lots of different things. This approach allows you to learn faster, have more fun, and increase the chances of discovering something new.",
+          "precision_at_3": 1.0,
+          "anchor_precision_at_3": 0.3333333333333333,
+          "relevance_flags": [
+            true,
+            true,
+            true
+          ],
+          "anchor_hits": [
+            true,
+            false,
+            false
+          ],
+          "faithfulness": 0.8571428571428571,
+          "faithfulness_detail": {
+            "score": 0.8571428571428571,
+            "supported": 6,
+            "total": 7,
+            "reason": "All claims except for the claim that 'style is doing things in a distinctive way without trying to' are supported by the context."
+          },
+          "answer_relevance": 0.9,
+          "retrieved": [
+            {
+              "chunk_idx": 0,
+              "score": 0.4362775683403015,
+              "n_words": 220,
+              "text": "How to Do Great Work July 2023 If you collected lists of techniques for doing great work in a lot of different fields, what would the intersection look like? I decided to find out by making it. Partly my goal was to create a guide that could be used by someone working in any field. But I was also curious about the shape of the intersection. And one thing this exercise shows is that it does have a definite shape; it's not just a point labelled \"work hard.\" The following recipe assumes you're very ambitious. The first step is to decide what to work on. The work you choose needs to have three qualities: it has to be something you have a natural aptitude for, that you have a deep interest in, and that offers scope to do great work. In practice you don't have to worry much about the third criterion. Ambitious people are if anything already too conservative about it. So all you need to do is find something you have an aptitude for and great interest in. [ 1 ] That sounds straightforward, but it's often quite difficult. When you're young you don't know what you're good at or what different kinds of work are like. Some kinds of work you end up doing may not even"
+            },
+            {
+              "chunk_idx": 14,
+              "score": 0.3416571617126465,
+              "n_words": 220,
+              "text": "[ 11 ] Fortunately there's a kind of economy of scale here. Though it might seem like you'd be taking on a heavy burden by trying to be the best, in practice you often end up net ahead. It's exciting, and also strangely liberating. It simplifies things. In some ways it's easier to try to be the best than to try merely to be good. One way to aim high is to try to make something that people will care about in a hundred years. Not because their opinions matter more than your contemporaries', but because something that still seems good in a hundred years is more likely to be genuinely good. Don't try to work in a distinctive style. Just try to do the best job you can; you won't be able to help doing it in a distinctive way. Style is doing things in a distinctive way without trying to. Trying to is affectation. Affectation is in effect to pretend that someone other than you is doing the work. You adopt an impressive but fake persona, and while you're pleased with the impressiveness, the fakeness is what shows in the work. [ 12 ] The temptation to be someone else is greatest for the young. They often feel like nobodies. But you never need to worry about that"
+            },
+            {
+              "chunk_idx": 30,
+              "score": 0.33774644136428833,
+              "n_words": 220,
+              "text": "bit on a lot of threads, and see what happens. Big things start small. The initial versions of big things were often just experiments, or side projects, or talks, which then grew into something bigger. So start lots of small things. Being prolific is underrated. The more different things you try, the greater the chance of discovering something new. Understand, though, that trying lots of things will mean trying lots of things that don't work. You can't have a lot of good ideas without also having a lot of bad ones. [ 21 ] Though it sounds more responsible to begin by studying everything that's been done before, you'll learn faster and have more fun by trying stuff. And you'll understand previous work better when you do look at it. So err on the side of starting. Which is easier when starting means starting small; those two ideas fit together like two puzzle pieces. How do you get from starting small to doing something great? By making successive versions. Great things are almost always made in successive versions. You start with something small and evolve it, and the final version is both cleverer and more ambitious than anything you could have planned. It's particularly useful to make successive versions when you're making something for people \u2014 to get an initial"
+            }
+          ]
+        }
+      ]
+    },
+    "recursive": {
+      "chunk_count": 81,
+      "avg_words": 174.6,
+      "std_words": 21.9,
+      "avg_chars": 966.9,
+      "word_sizes": [
+        95,
+        197,
+        180,
+        184,
+        161,
+        172,
+        194,
+        182,
+        178,
+        173,
+        177,
+        181,
+        184,
+        174,
+        188,
+        130,
+        167,
+        192,
+        171,
+        184,
+        167,
+        139,
+        174,
+        191,
+        163,
+        188,
+        193,
+        186,
+        176,
+        162,
+        170,
+        186,
+        181,
+        182,
+        173,
+        173,
+        170,
+        170,
+        171,
+        172,
+        166,
+        172,
+        183,
+        169,
+        191,
+        168,
+        171,
+        182,
+        181,
+        181,
+        129,
+        189,
+        193,
+        173,
+        180,
+        169,
+        175,
+        183,
+        147,
+        168,
+        179,
+        186,
+        197,
+        188,
+        198,
+        183,
+        91,
+        181,
+        198,
+        193,
+        193,
+        183,
+        181,
+        193,
+        201,
+        185,
+        187,
+        184,
+        188,
+        160,
+        75
+      ],
+      "mean_precision_at_3": 0.6,
+      "mean_anchor_precision_at_3": 0.533,
+      "mean_faithfulness": 0.903,
+      "mean_answer_relevance": 0.78,
+      "per_query": [
+        {
+          "query_id": "Q1",
+          "qtype": "factual",
+          "question": "According to the essay, what are the three things you need to do great work?",
+          "answer": "I don't know.",
+          "precision_at_3": 0.6666666666666666,
+          "anchor_precision_at_3": 0.0,
+          "relevance_flags": [
+            true,
+            true,
+            false
+          ],
+          "anchor_hits": [
+            false,
+            false,
+            false
+          ],
+          "faithfulness": 1.0,
+          "faithfulness_detail": {
+            "score": 1.0,
+            "supported": 0,
+            "total": 0,
+            "reason": "abstained"
+          },
+          "answer_relevance": 0.6,
+          "retrieved": [
+            {
+              "chunk_idx": 5,
+              "score": 0.41043969988822937,
+              "n_words": 172,
+              "text": "omising ones This is how practically everyone who's done great work has done it, from painters to physicists Steps two and four will require hard work It may not be possible to prove that you have to work hard to do great things, but the empirical evidence is on the scale of the evidence for mortality That's why it's essential to work on something you're deeply interested in Interest will drive you to work harder than mere diligence ever could The three most powerful motives are curiosity, delight, and the desire to do something impressive Sometimes they converge, and that combination is the most powerful of all The big prize is to discover a new fractal bud You notice a crack in the surface of knowledge, pry it open, and there's a whole world inside Let's talk a little more about the complicated business of figuring out what to work on The main reason it's hard is that you can't tell what most kinds of work are like except by doing them"
+            },
+            {
+              "chunk_idx": 68,
+              "score": 0.405676007270813,
+              "n_words": 198,
+              "text": "ecific than work harder. Curiosity is the best guide. Your curiosity never lies, and it knows more than you do about what's worth paying attention to. Notice how often that word has come up. If you asked an oracle the secret to doing great work and the oracle replied with a single word, my bet would be on \"curiosity.\" That doesn't translate directly to advice. It's not enough just to be curious, and you can't command curiosity anyway. But you can nurture it and let it drive you. Curiosity is the key to all four steps in doing great work: it will choose the field for you, get you to the frontier, cause you to notice the gaps in it, and drive you to explore them. The whole process is a kind of dance with curiosity. Believe it or not, I tried to make this essay as short as I could But its length at least means it acts as a filter If you made it this far, you must be interested in doing great work And if so you're already further along than you might realize, because the set of people willing to want to is small"
+            },
+            {
+              "chunk_idx": 23,
+              "score": 0.3568683862686157,
+              "n_words": 191,
+              "text": "ou succeed at an ambitious project, you're not a nobody; you're the person who did it. So just do the work and your identity will take care of itself. \"Avoid affectation\" is a useful rule so far as it goes, but how would you express this idea positively? How would you say what to be, instead of what not to be? The best answer is earnest If you're earnest you avoid not just affectation but a whole set of similar vices The core of being earnest is being intellectually honest We're taught as children to be honest as an unselfish virtue \u2014 as a kind of sacrifice But in fact it's a source of power too To see new ideas, you need an exceptionally sharp eye for the truth You're trying to see more truth than others have seen so far And how can you have a sharp eye for the truth if you're intellectually dishonest? One way to avoid intellectual dishonesty is to maintain a slight positive pressure in the opposite direction Be aggressively willing to admit that you're mistaken Once you've admitted you were mistaken about something, you're free"
+            }
+          ]
+        },
+        {
+          "query_id": "Q2",
+          "qtype": "multi-hop",
+          "question": "How does curiosity connect to both choosing what to work on and actually producing original work?",
+          "answer": "According to the context, curiosity connects to both choosing what to work on and producing original work by serving as a guide that chooses the field for you and drives exploration of gaps in it. It also fuels originality by giving new things to work on and is itself a kind of originality, closely related to creativity.",
+          "precision_at_3": 1.0,
+          "anchor_precision_at_3": 1.0,
+          "relevance_flags": [
+            true,
+            true,
+            true
+          ],
+          "anchor_hits": [
+            true,
+            true,
+            true
+          ],
+          "faithfulness": 0.8,
+          "faithfulness_detail": {
+            "score": 0.8,
+            "supported": 4,
+            "total": 5,
+            "reason": "Claim 1 is partially supported, Claim 2 and 3 are directly supported, Claim 4 is not supported, Claim 5 is not supported"
+          },
+          "answer_relevance": 0.8,
+          "retrieved": [
+            {
+              "chunk_idx": 32,
+              "score": 0.5804552435874939,
+              "n_words": 181,
+              "text": "ideas there. The journey itself often dislodges them. But you may not have to go far to get this benefit. Sometimes it's enough just to go for a walk. [ 16 ] It also helps to travel in topic space. You'll have more new ideas if you explore lots of different topics, partly because it gives the angle grinder more surface area to work on, and partly because analogies are an especially fruitful source of new ideas. Don't divide your attention evenly between many topics though, or you'll spread yourself too thin. You want to distribute it according to something more like a power law. [ 17 ] Be professionally curious about a few topics and idly curious about many more. Curiosity and originality are closely related. Curiosity feeds originality by giving it new things to work on. But the relationship is closer than that. Curiosity is itself a kind of originality; it's roughly to questions what originality is to answers. And since questions at their best are a big component of answers, curiosity at its best is a creative force."
+            },
+            {
+              "chunk_idx": 68,
+              "score": 0.5470168590545654,
+              "n_words": 198,
+              "text": "ecific than work harder. Curiosity is the best guide. Your curiosity never lies, and it knows more than you do about what's worth paying attention to. Notice how often that word has come up. If you asked an oracle the secret to doing great work and the oracle replied with a single word, my bet would be on \"curiosity.\" That doesn't translate directly to advice. It's not enough just to be curious, and you can't command curiosity anyway. But you can nurture it and let it drive you. Curiosity is the key to all four steps in doing great work: it will choose the field for you, get you to the frontier, cause you to notice the gaps in it, and drive you to explore them. The whole process is a kind of dance with curiosity. Believe it or not, I tried to make this essay as short as I could But its length at least means it acts as a filter If you made it this far, you must be interested in doing great work And if so you're already further along than you might realize, because the set of people willing to want to is small"
+            },
+            {
+              "chunk_idx": 33,
+              "score": 0.4678150415420532,
+              "n_words": 182,
+              "text": "questions what originality is to answers. And since questions at their best are a big component of answers, curiosity at its best is a creative force. Having new ideas is a strange game, because it usually consists of seeing things that were right under your nose Once you've seen a new idea, it tends to seem obvious Why did no one think of this before? When an idea seems simultaneously novel and obvious, it's probably a good one Seeing something obvious sounds easy And yet empirically having new ideas is hard What's the source of this apparent contradiction? It's that seeing the new idea usually requires you to change the way you look at the world We see the world through models that both help and constrain us When you fix a broken model, new ideas become obvious But noticing and fixing a broken model is hard That's how new ideas can be both obvious and yet hard to discover: they're easy to see after you do something hard One way to discover broken models is to be stricter than other people"
+            }
+          ]
+        },
+        {
+          "query_id": "Q3",
+          "qtype": "negation",
+          "question": "What does Paul Graham say you should NOT let determine what you work on?",
+          "answer": "I don't know.",
+          "precision_at_3": 0.0,
+          "anchor_precision_at_3": 0.0,
+          "relevance_flags": [
+            false,
+            false,
+            false
+          ],
+          "anchor_hits": [
+            false,
+            false,
+            false
+          ],
+          "faithfulness": 1.0,
+          "faithfulness_detail": {
+            "score": 1.0,
+            "supported": 0,
+            "total": 0,
+            "reason": "abstained"
+          },
+          "answer_relevance": 0.8,
+          "retrieved": [
+            {
+              "chunk_idx": 23,
+              "score": 0.37303248047828674,
+              "n_words": 191,
+              "text": "ou succeed at an ambitious project, you're not a nobody; you're the person who did it. So just do the work and your identity will take care of itself. \"Avoid affectation\" is a useful rule so far as it goes, but how would you express this idea positively? How would you say what to be, instead of what not to be? The best answer is earnest If you're earnest you avoid not just affectation but a whole set of similar vices The core of being earnest is being intellectually honest We're taught as children to be honest as an unselfish virtue \u2014 as a kind of sacrifice But in fact it's a source of power too To see new ideas, you need an exceptionally sharp eye for the truth You're trying to see more truth than others have seen so far And how can you have a sharp eye for the truth if you're intellectually dishonest? One way to avoid intellectual dishonesty is to maintain a slight positive pressure in the opposite direction Be aggressively willing to admit that you're mistaken Once you've admitted you were mistaken about something, you're free"
+            },
+            {
+              "chunk_idx": 25,
+              "score": 0.3669825792312622,
+              "n_words": 188,
+              "text": "erds have a kind of innocent boldness that's exactly what you need in doing great work It's not learned; it's preserved from childhood So hold onto it Be the one who puts things out there rather than the one who sits back and offers sophisticated-sounding criticisms of them \"It's easy to criticize\" is true in the most literal sense, and the route to great work is never easy There may be some jobs where it's an advantage to be cynical and pessimistic, but if you want to do great work it's an advantage to be optimistic, even though that means you'll risk looking like a fool sometimes There's an old tradition of doing the opposite The Old Testament says it's better to keep quiet lest you look like a fool But that's advice for seeming smart If you actually want to discover new things, it's better to take the risk of telling people your ideas Some people are naturally earnest, and with others it takes a conscious effort Either kind of earnestness will suffice But I doubt it would be possible to do great work without being earnest"
+            },
+            {
+              "chunk_idx": 72,
+              "score": 0.3503814935684204,
+              "n_words": 181,
+              "text": "hing amazing, and leave it to future generations to say if you succeeded [ 2 ] A lot of standup comedy is based on noticing anomalies in everyday life \"Did you ever notice...?\" New ideas come from doing this about nontrivial things Which may help explain why people's reaction to a new idea is often the first half of laughing: Ha! [ 3 ] That second qualifier is critical If you're excited about something most authorities discount, but you can't give a more precise explanation than \"they don't get it,\" then you're starting to drift into the territory of cranks [ 4 ] Finding something to work on is not simply a matter of finding a match between the current version of you and a list of known problems You'll often have to coevolve with the problem That's why it can sometimes be so hard to figure out what to work on The search space is huge It's the cartesian product of all possible types of work, both known and yet to be discovered, and all possible future versions of you"
+            }
+          ]
+        },
+        {
+          "query_id": "Q4",
+          "qtype": "comparison",
+          "question": "How does the essay contrast working hard with working on the right things?",
+          "answer": "The essay suggests that working hard is not enough; it's also essential to work on something you're deeply interested in. While diligence can drive effort, interest will drive motivation and lead to harder work. The combination of curiosity, delight, and a desire to do something impressive is the most powerful motive for achieving great things.",
+          "precision_at_3": 0.3333333333333333,
+          "anchor_precision_at_3": 0.6666666666666666,
+          "relevance_flags": [
+            false,
+            false,
+            true
+          ],
+          "anchor_hits": [
+            true,
+            true,
+            false
+          ],
+          "faithfulness": 0.8571428571428571,
+          "faithfulness_detail": {
+            "score": 0.8571428571428571,
+            "supported": 6,
+            "total": 7,
+            "reason": "Most claims are supported by the text, with only one claim about the nature of ambition being partially supported."
+          },
+          "answer_relevance": 0.8,
+          "retrieved": [
+            {
+              "chunk_idx": 6,
+              "score": 0.39861729741096497,
+              "n_words": 194,
+              "text": "icated business of figuring out what to work on The main reason it's hard is that you can't tell what most kinds of work are like except by doing them Which means the four steps overlap: you may have to work at something for years before you know how much you like it or how good you are at it And in the meantime you're not doing, and thus not learning about, most other kinds of work So in the worst case you choose late based on very incomplete information. [ 4 ] The nature of ambition exacerbates this problem Ambition comes in two forms, one that precedes interest in the subject and one that grows out of it Most people who do great work have a mix, and the more you have of the former, the harder it will be to decide what to do The educational systems in most countries pretend it's easy They expect you to commit to a field long before you could know what it's really like And as a result an ambitious person on an optimal trajectory will often read to the system as an instance of breakage"
+            },
+            {
+              "chunk_idx": 5,
+              "score": 0.39569008350372314,
+              "n_words": 172,
+              "text": "omising ones This is how practically everyone who's done great work has done it, from painters to physicists Steps two and four will require hard work It may not be possible to prove that you have to work hard to do great things, but the empirical evidence is on the scale of the evidence for mortality That's why it's essential to work on something you're deeply interested in Interest will drive you to work harder than mere diligence ever could The three most powerful motives are curiosity, delight, and the desire to do something impressive Sometimes they converge, and that combination is the most powerful of all The big prize is to discover a new fractal bud You notice a crack in the surface of knowledge, pry it open, and there's a whole world inside Let's talk a little more about the complicated business of figuring out what to work on The main reason it's hard is that you can't tell what most kinds of work are like except by doing them"
+            },
+            {
+              "chunk_idx": 53,
+              "score": 0.3823818564414978,
+              "n_words": 173,
+              "text": "then measuring whether you did But neither classes nor tests are intrinsic to learning; they're just artifacts of the way schools are usually designed The sooner you overcome this passivity, the better If you're still in school, try thinking of your education as your project, and your teachers as working for you rather than vice versa That may seem a stretch, but it's not merely some weird thought experiment It's the truth economically, and in the best case it's the truth intellectually as well The best teachers don't want to be your bosses They'd prefer it if you pushed ahead, using them as a source of advice, rather than being pulled by them through the material Schools also give you a misleading impression of what work is like In school they tell you what the problems are, and they're almost always soluble using no more than you've been taught so far In real life you have to figure out what the problems are, and you often don't know if they're soluble at all"
+            }
+          ]
+        },
+        {
+          "query_id": "Q5",
+          "qtype": "summarisation",
+          "question": "Summarise the essay's overall recipe for doing great work in two or three sentences.",
+          "answer": "The essay's recipe for doing great work involves working on something deeply interesting and driven by curiosity. This curiosity will guide you through the process, choosing the field, getting you to the frontier, noticing gaps, and driving exploration. It is essential to nurture this curiosity as it is the key to all four steps in doing great work.",
+          "precision_at_3": 1.0,
+          "anchor_precision_at_3": 1.0,
+          "relevance_flags": [
+            true,
+            true,
+            true
+          ],
+          "anchor_hits": [
+            true,
+            true,
+            true
+          ],
+          "faithfulness": 0.8571428571428571,
+          "faithfulness_detail": {
+            "score": 0.8571428571428571,
+            "supported": 6,
+            "total": 7,
+            "reason": "Claim 1 is partially supported as it mentions 'the empirical evidence' but not the exact shape of the intersection. Claim 2 is directly supported as it states 'practically everyone who's done great work has done it'. Claim 3 is directly supported as it quotes an oracle with a single word answer. Claim 4 is directly supported as it explains how curiosity drives exploration. Claim 5 is partially supported as it mentions 'the set of people willing to want' but not the exact process. Claim 6 is directly supported as it states 'curiosity is the key to all four steps'. Claim 7 is partially supported as it mentions 'the whole process is a kind of dance with curiosity' but not the exact nature of this dance."
+          },
+          "answer_relevance": 0.9,
+          "retrieved": [
+            {
+              "chunk_idx": 0,
+              "score": 0.43384671211242676,
+              "n_words": 95,
+              "text": "How to Do Great Work July 2023 If you collected lists of techniques for doing great work in a lot of different fields, what would the intersection look like? I decided to find out by making it. Partly my goal was to create a guide that could be used by someone working in any field. But I was also curious about the shape of the intersection. And one thing this exercise shows is that it does have a definite shape; it's not just a point labelled \"work hard.\" The following recipe assumes you're very ambitious."
+            },
+            {
+              "chunk_idx": 5,
+              "score": 0.3963354229927063,
+              "n_words": 172,
+              "text": "omising ones This is how practically everyone who's done great work has done it, from painters to physicists Steps two and four will require hard work It may not be possible to prove that you have to work hard to do great things, but the empirical evidence is on the scale of the evidence for mortality That's why it's essential to work on something you're deeply interested in Interest will drive you to work harder than mere diligence ever could The three most powerful motives are curiosity, delight, and the desire to do something impressive Sometimes they converge, and that combination is the most powerful of all The big prize is to discover a new fractal bud You notice a crack in the surface of knowledge, pry it open, and there's a whole world inside Let's talk a little more about the complicated business of figuring out what to work on The main reason it's hard is that you can't tell what most kinds of work are like except by doing them"
+            },
+            {
+              "chunk_idx": 68,
+              "score": 0.3844049572944641,
+              "n_words": 198,
+              "text": "ecific than work harder. Curiosity is the best guide. Your curiosity never lies, and it knows more than you do about what's worth paying attention to. Notice how often that word has come up. If you asked an oracle the secret to doing great work and the oracle replied with a single word, my bet would be on \"curiosity.\" That doesn't translate directly to advice. It's not enough just to be curious, and you can't command curiosity anyway. But you can nurture it and let it drive you. Curiosity is the key to all four steps in doing great work: it will choose the field for you, get you to the frontier, cause you to notice the gaps in it, and drive you to explore them. The whole process is a kind of dance with curiosity. Believe it or not, I tried to make this essay as short as I could But its length at least means it acts as a filter If you made it this far, you must be interested in doing great work And if so you're already further along than you might realize, because the set of people willing to want to is small"
+            }
+          ]
+        }
+      ]
+    },
+    "semantic": {
+      "chunk_count": 83,
+      "avg_words": 143.9,
+      "std_words": 118.2,
+      "avg_chars": 805.1,
+      "word_sizes": [
+        55,
+        323,
+        223,
+        324,
+        186,
+        45,
+        226,
+        10,
+        97,
+        65,
+        345,
+        288,
+        322,
+        82,
+        10,
+        54,
+        335,
+        128,
+        174,
+        49,
+        87,
+        324,
+        123,
+        325,
+        278,
+        329,
+        17,
+        7,
+        270,
+        195,
+        9,
+        105,
+        67,
+        61,
+        181,
+        7,
+        78,
+        21,
+        44,
+        34,
+        5,
+        62,
+        5,
+        270,
+        323,
+        276,
+        81,
+        183,
+        94,
+        148,
+        306,
+        153,
+        8,
+        24,
+        28,
+        238,
+        10,
+        200,
+        339,
+        325,
+        320,
+        133,
+        31,
+        52,
+        166,
+        68,
+        349,
+        36,
+        36,
+        127,
+        38,
+        11,
+        106,
+        91,
+        289,
+        339,
+        41,
+        333,
+        143,
+        15,
+        179,
+        14,
+        48
+      ],
+      "mean_precision_at_3": 0.733,
+      "mean_anchor_precision_at_3": 0.533,
+      "mean_faithfulness": 0.765,
+      "mean_answer_relevance": 0.86,
+      "per_query": [
+        {
+          "query_id": "Q1",
+          "qtype": "factual",
+          "question": "According to the essay, what are the three things you need to do great work?",
+          "answer": "According to the context passages, the three things needed to do great work are:\n\n1. Work hard on excitingly ambitious projects.\n2. Preserve certain invariants (i.e., follow your interests and try to stay upwind).\n3. Balance effort with rest and avoid overworking, as excessive effort can lead to diminishing returns and negative consequences for one's health.",
+          "precision_at_3": 0.3333333333333333,
+          "anchor_precision_at_3": 0.0,
+          "relevance_flags": [
+            false,
+            false,
+            true
+          ],
+          "anchor_hits": [
+            false,
+            false,
+            false
+          ],
+          "faithfulness": 0.6666666666666666,
+          "faithfulness_detail": {
+            "score": 0.6666666666666666,
+            "supported": 2,
+            "total": 3,
+            "reason": "Claim 1 is supported, Claim 2 is supported with some interpretation, and Claim 3 is not directly supported by the context."
+          },
+          "answer_relevance": 0.9,
+          "retrieved": [
+            {
+              "chunk_idx": 67,
+              "score": 0.41853243112564087,
+              "n_words": 36,
+              "text": "The whole process is a kind of dance with curiosity. Believe it or not, I tried to make this essay as short as I could. But its length at least means it acts as a filter."
+            },
+            {
+              "chunk_idx": 0,
+              "score": 0.38656681776046753,
+              "n_words": 55,
+              "text": "How to Do Great Work  July 2023 If you collected lists of techniques for doing great work in a lot of different fields, what would the intersection look like? I decided to find out by making it. Partly my goal was to create a guide that could be used by someone working in any field."
+            },
+            {
+              "chunk_idx": 10,
+              "score": 0.34239107370376587,
+              "n_words": 345,
+              "text": "Pretentiousness, fashion, fear, money, politics, other people's wishes, eminent frauds. But if you stick to what you find genuinely interesting, you'll be proof against all of them. If you're interested, you're not astray. Following your interests may sound like a rather passive strategy, but in practice it usually means following them past all sorts of obstacles. You usually have to risk rejection and failure. So it does take a good deal of boldness. But while you need boldness, you don't usually need much planning. In most cases the recipe for doing great work is simply: work hard on excitingly ambitious projects, and something good will come of it. Instead of making a plan and then executing it, you just try to preserve certain invariants. The trouble with planning is that it only works for achievements you can describe in advance. You can win a gold medal or get rich by deciding to as a child and then tenaciously pursuing that goal, but you can't discover natural selection that way. I think for most people who want to do great work, the right strategy is not to plan too much. At each stage do whatever seems most interesting and gives you the best options for the future. I call this approach \"staying upwind.\" This is how most people who've done great work seem to have done it. Even when you've found something exciting to work on, working on it is not always straightforward. There will be times when some new idea makes you leap out of bed in the morning and get straight to work. But there will also be plenty of times when things aren't like that. You don't just put out your sail and get blown forward by inspiration. There are headwinds and currents and hidden shoals. So there's a technique to working, just as there is to sailing. For example, while you must work hard, it's possible to work too hard, and if you do that you'll find you get diminishing returns: fatigue will make you stupid, and eventually even damage your health."
+            }
+          ]
+        },
+        {
+          "query_id": "Q2",
+          "qtype": "multi-hop",
+          "question": "How does curiosity connect to both choosing what to work on and actually producing original work?",
+          "answer": "Curiosity is essential for discovering a new fractal bud, which involves noticing cracks in the surface of knowledge and exploring them. It also drives interest, which is one of the three most powerful motives that can lead to great work. By seizing on signs of breakage and embracing outlier ideas, curiosity helps individuals choose what to work on and produce original work.",
+          "precision_at_3": 1.0,
+          "anchor_precision_at_3": 1.0,
+          "relevance_flags": [
+            true,
+            true,
+            true
+          ],
+          "anchor_hits": [
+            true,
+            true,
+            true
+          ],
+          "faithfulness": 0.8571428571428571,
+          "faithfulness_detail": {
+            "score": 0.8571428571428571,
+            "supported": 6,
+            "total": 7,
+            "reason": "All factual claims are supported except for none."
+          },
+          "answer_relevance": 0.8,
+          "retrieved": [
+            {
+              "chunk_idx": 26,
+              "score": 0.7970287203788757,
+              "n_words": 17,
+              "text": "Curiosity and originality are closely related. Curiosity feeds originality by giving it new things to work on."
+            },
+            {
+              "chunk_idx": 28,
+              "score": 0.5930235385894775,
+              "n_words": 270,
+              "text": "Curiosity is itself a kind of originality; it's roughly to questions what originality is to answers. And since questions at their best are a big component of answers, curiosity at its best is a creative force. Having new ideas is a strange game, because it usually consists of seeing things that were right under your nose. Once you've seen a new idea, it tends to seem obvious. Why did no one think of this before? When an idea seems simultaneously novel and obvious, it's probably a good one. Seeing something obvious sounds easy. And yet empirically having new ideas is hard. What's the source of this apparent contradiction? It's that seeing the new idea usually requires you to change the way you look at the world. We see the world through models that both help and constrain us. When you fix a broken model, new ideas become obvious. But noticing and fixing a broken model is hard. That's how new ideas can be both obvious and yet hard to discover: they're easy to see after you do something hard. One way to discover broken models is to be stricter than other people. Broken models of the world leave a trail of clues where they bash against reality. Most people don't want to see these clues. It would be an understatement to say that they're attached to their current model; it's what they think in; so they'll tend to ignore the trail of clues left by its breakage, however conspicuous it may seem in retrospect. To find new ideas you have to seize on signs of breakage instead of looking away."
+            },
+            {
+              "chunk_idx": 3,
+              "score": 0.4316760003566742,
+              "n_words": 324,
+              "text": "It would be affected to try to manufacture it, but if it appears, embrace it. Boldly chase outlier ideas, even if other people aren't interested in them \u2014 in fact, especially if they aren't. If you're excited about some possibility that everyone else ignores, and you have enough expertise to say precisely what they're all overlooking, that's as good a bet as you'll find.  [ 3 ] Four steps: choose a field, learn enough to get to the frontier, notice gaps, explore promising ones. This is how practically everyone who's done great work has done it, from painters to physicists. Steps two and four will require hard work. It may not be possible to prove that you have to work hard to do great things, but the empirical evidence is on the scale of the evidence for mortality. That's why it's essential to work on something you're deeply interested in. Interest will drive you to work harder than mere diligence ever could. The three most powerful motives are curiosity, delight, and the desire to do something impressive. Sometimes they converge, and that combination is the most powerful of all. The big prize is to discover a new fractal bud. You notice a crack in the surface of knowledge, pry it open, and there's a whole world inside. Let's talk a little more about the complicated business of figuring out what to work on. The main reason it's hard is that you can't tell what most kinds of work are like except by doing them. Which means the four steps overlap: you may have to work at something for years before you know how much you like it or how good you are at it. And in the meantime you're not doing, and thus not learning about, most other kinds of work. So in the worst case you choose late based on very incomplete information.  [ 4 ] The nature of ambition exacerbates this problem."
+            }
+          ]
+        },
+        {
+          "query_id": "Q3",
+          "qtype": "negation",
+          "question": "What does Paul Graham say you should NOT let determine what you work on?",
+          "answer": "[3] The reason I mention this case explicitly is that so many people get it wrong. Instead of making what they want, they try to make what some imaginary, more sophisticated audience wants. And once you go down that route, you're lost.",
+          "precision_at_3": 1.0,
+          "anchor_precision_at_3": 0.3333333333333333,
+          "relevance_flags": [
+            true,
+            true,
+            true
+          ],
+          "anchor_hits": [
+            false,
+            true,
+            false
+          ],
+          "faithfulness": 0.75,
+          "faithfulness_detail": {
+            "score": 0.75,
+            "supported": 3,
+            "total": 4,
+            "reason": "The reason I mention this case explicitly is that so many people get it wrong. Instead of making what they want, they try to make what some imaginary, more sophisticated audience wants."
+          },
+          "answer_relevance": 0.9,
+          "retrieved": [
+            {
+              "chunk_idx": 75,
+              "score": 0.3659384846687317,
+              "n_words": 339,
+              "text": "Which they will not always be; different types of work have been collected together as much by accidents of history as by the intrinsic similarities between them. [ 5 ] There are many reasons curious people are more likely to do great work, but one of the more subtle is that, by casting a wide net, they're more likely to find the right thing to work on in the first place. [ 6 ] It can also be dangerous to make things for an audience you feel is less sophisticated than you, if that causes you to talk down to them. You can make a lot of money doing that, if you do it in a sufficiently cynical way, but it's not the route to great work. Not that anyone using this m.o. would care. [ 7 ] This idea I learned from Hardy's A Mathematician's Apology , which I recommend to anyone ambitious to do great work, in any field. [ 8 ] Just as we overestimate what we can do in a day and underestimate what we can do over several years, we overestimate the damage done by procrastinating for a day and underestimate the damage done by procrastinating for several years. [ 9 ] You can't usually get paid for doing exactly what you want, especially early on. There are two options: get paid for doing work close to what you want and hope to push it closer, or get paid for doing something else entirely and do your own projects on the side. Both can work, but both have drawbacks: in the first approach your work is compromised by default, and in the second you have to fight to get time to do it. [ 10 ] If you set your life up right, it will deliver the focus-relax cycle automatically. The perfect setup is an office you work in and that you walk to and from. [ 11 ] There may be some very unworldly people who do great work without consciously trying to."
+            },
+            {
+              "chunk_idx": 22,
+              "score": 0.3593541085720062,
+              "n_words": 123,
+              "text": "If you actually want to discover new things, it's better to take the risk of telling people your ideas. Some people are naturally earnest, and with others it takes a conscious effort. Either kind of earnestness will suffice. But I doubt it would be possible to do great work without being earnest. It's so hard to do even if you are. You don't have enough margin for error to accommodate the distortions introduced by being affected, intellectually dishonest, orthodox, fashionable, or cool.  [ 14 ]  Great work is consistent not only with who did it, but with itself. It's usually all of a piece. So if you face a decision in the middle of working on something, ask which choice is more consistent."
+            },
+            {
+              "chunk_idx": 9,
+              "score": 0.35596004128456116,
+              "n_words": 65,
+              "text": "The reason I mention this case explicitly is that so many people get it wrong. Instead of making what they want, they try to make what some imaginary, more sophisticated audience wants. And once you go down that route, you're lost.  [ 6 ] There are a lot of forces that will lead you astray when you're trying to figure out what to work on."
+            }
+          ]
+        },
+        {
+          "query_id": "Q4",
+          "qtype": "comparison",
+          "question": "How does the essay contrast working hard with working on the right things?",
+          "answer": "The essay contrasts working hard with working on the right things, suggesting that it's not just about putting in effort, but also about doing what is genuinely good and consistent. It implies that trying to work on something that aligns with your true intentions and values is more important than simply putting in a lot of effort.",
+          "precision_at_3": 0.3333333333333333,
+          "anchor_precision_at_3": 0.3333333333333333,
+          "relevance_flags": [
+            true,
+            false,
+            false
+          ],
+          "anchor_hits": [
+            false,
+            true,
+            false
+          ],
+          "faithfulness": 0.8,
+          "faithfulness_detail": {
+            "score": 0.8,
+            "supported": 4,
+            "total": 5,
+            "reason": "Most claims are supported by the context, with only one claim requiring inference."
+          },
+          "answer_relevance": 0.8,
+          "retrieved": [
+            {
+              "chunk_idx": 18,
+              "score": 0.39214223623275757,
+              "n_words": 174,
+              "text": "It's exciting, and also strangely liberating. It simplifies things. In some ways it's easier to try to be the best than to try merely to be good. One way to aim high is to try to make something that people will care about in a hundred years. Not because their opinions matter more than your contemporaries', but because something that still seems good in a hundred years is more likely to be genuinely good. Don't try to work in a distinctive style. Just try to do the best job you can; you won't be able to help doing it in a distinctive way. Style is doing things in a distinctive way without trying to. Trying to is affectation. Affectation is in effect to pretend that someone other than you is doing the work. You adopt an impressive but fake persona, and while you're pleased with the impressiveness, the fakeness is what shows in the work.  [ 12 ] The temptation to be someone else is greatest for the young. They often feel like nobodies."
+            },
+            {
+              "chunk_idx": 22,
+              "score": 0.38234105706214905,
+              "n_words": 123,
+              "text": "If you actually want to discover new things, it's better to take the risk of telling people your ideas. Some people are naturally earnest, and with others it takes a conscious effort. Either kind of earnestness will suffice. But I doubt it would be possible to do great work without being earnest. It's so hard to do even if you are. You don't have enough margin for error to accommodate the distortions introduced by being affected, intellectually dishonest, orthodox, fashionable, or cool.  [ 14 ]  Great work is consistent not only with who did it, but with itself. It's usually all of a piece. So if you face a decision in the middle of working on something, ask which choice is more consistent."
+            },
+            {
+              "chunk_idx": 70,
+              "score": 0.36767932772636414,
+              "n_words": 38,
+              "text": "It's just a question of finding it, and how far into it your ability and interest can take you. And you can only answer that by trying. Many more people could try to do great work than do."
+            }
+          ]
+        },
+        {
+          "query_id": "Q5",
+          "qtype": "summarisation",
+          "question": "Summarise the essay's overall recipe for doing great work in two or three sentences.",
+          "answer": "Great work happens by focusing consistently on something you're genuinely interested in, and it's about making progress over time, not getting a lot done every day. Consistency is key, as small daily efforts can add up to significant accomplishments. The goal is to make steady progress rather than achieving perfection or doing nothing at all.",
+          "precision_at_3": 1.0,
+          "anchor_precision_at_3": 1.0,
+          "relevance_flags": [
+            true,
+            true,
+            true
+          ],
+          "anchor_hits": [
+            true,
+            true,
+            true
+          ],
+          "faithfulness": 0.75,
+          "faithfulness_detail": {
+            "score": 0.75,
+            "supported": 3,
+            "total": 4,
+            "reason": "Claim 1 is partially supported, Claim 2 and 3 are directly supported by the context."
+          },
+          "answer_relevance": 0.9,
+          "retrieved": [
+            {
+              "chunk_idx": 67,
+              "score": 0.46726149320602417,
+              "n_words": 36,
+              "text": "The whole process is a kind of dance with curiosity. Believe it or not, I tried to make this essay as short as I could. But its length at least means it acts as a filter."
+            },
+            {
+              "chunk_idx": 0,
+              "score": 0.4572937488555908,
+              "n_words": 55,
+              "text": "How to Do Great Work  July 2023 If you collected lists of techniques for doing great work in a lot of different fields, what would the intersection look like? I decided to find out by making it. Partly my goal was to create a guide that could be used by someone working in any field."
+            },
+            {
+              "chunk_idx": 13,
+              "score": 0.35520339012145996,
+              "n_words": 82,
+              "text": "Great work happens by focusing consistently on something you're genuinely interested in. When you pause to take stock, you're surprised how far you've come. The reason we're surprised is that we underestimate the cumulative effect of work. Writing a page a day doesn't sound like much, but if you do it every day you'll write a book a year. That's the key: consistency. People who do great things don't get a lot done every day. They get something done, rather than nothing."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

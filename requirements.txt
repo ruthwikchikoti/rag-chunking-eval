@@ -1,0 +1,6 @@
+numpy>=1.26
+pandas>=2.1
+matplotlib>=3.8
+sentence-transformers>=2.7
+beautifulsoup4>=4.12
+requests>=2.31

@@ -123,6 +123,15 @@ def run_all(smoke: bool = False) -> dict:
 # ---------------------------------------------------------------------------
 
 
+def _df_to_markdown(df: pd.DataFrame) -> str:
+    """Render a DataFrame as a GitHub markdown table (no tabulate dependency)."""
+    cols = list(df.columns)
+    header = "| " + " | ".join(cols) + " |"
+    sep = "| " + " | ".join("---" for _ in cols) + " |"
+    rows = ["| " + " | ".join(str(v) for v in row) + " |" for row in df.itertuples(index=False)]
+    return "\n".join([header, sep, *rows])
+
+
 def _comparison_frame(report: dict) -> pd.DataFrame:
     rows = []
     for strat, s in report["strategies"].items():
@@ -151,7 +160,7 @@ def write_outputs(report: dict) -> None:
     # 2) comparison table (csv + md)
     df = _comparison_frame(report)
     df.to_csv(OUTPUT_DIR / "comparison_table.csv", index=False)
-    (OUTPUT_DIR / "comparison_table.md").write_text(df.to_markdown(index=False))
+    (OUTPUT_DIR / "comparison_table.md").write_text(_df_to_markdown(df))
     print("\n" + df.to_string(index=False))
 
     # 3) grouped bar chart of quality metrics
